@@ -1,5 +1,8 @@
 import type { NextConfig } from 'next';
 
+const isProd = process.env.NODE_ENV === 'production';
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export',
@@ -16,8 +19,12 @@ const nextConfig: NextConfig = {
     domains: ['images.unsplash.com'] 
   },
   
-  basePath: '/personal-website',
-  assetPrefix: '/personal-website/',
+  // Only use basePath and assetPrefix for GitHub Pages deployment
+  ...(isGitHubPages && {
+    basePath: '/personal-website',
+    assetPrefix: '/personal-website/',
+  }),
+  
   trailingSlash: true,
   
   webpack: (config) => {

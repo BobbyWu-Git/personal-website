@@ -16,6 +16,7 @@
     "@types/react": "^19",
     "@types/react-dom": "^19",
     "autoprefixer": "^10.4.21",
+    "cross-env": "^10.0.0",
     "eslint": "^9",
     "eslint-config-next": "15.5.3",
     "gh-pages": "^6.3.0",
@@ -25,9 +26,10 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "build:github": "cross-env GITHUB_PAGES=true next build",
     "start": "next start",
     "lint": "eslint",
-    "predeploy": "npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
+    "predeploy": "npm run build:github && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
     "deploy": "gh-pages -d out -b gh-pages"
   }
 }
