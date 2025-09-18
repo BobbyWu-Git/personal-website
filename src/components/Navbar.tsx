@@ -4,9 +4,12 @@ import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
 
 const navItems = [
-  { name: 'Home', href: '#home' },
+  { name: 'About', href: '#about' },
   { name: 'Projects', href: '#projects' },
-  { name: 'Links', href: '#links' },
+  { name: 'Experience', href: '#experience' },
+  { name: 'Leadership', href: '#leadership' },
+  { name: 'Writing', href: '#writing' },
+  { name: 'Contact', href: '#contact' },
 ];
 
 export default function Navbar() {
@@ -30,6 +33,14 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
+            <a
+              href="/Bobby_Wu_Resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200 text-sm"
+            >
+              Resume
+            </a>
             <ThemeToggle />
           </div>
           
