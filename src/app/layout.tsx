@@ -9,23 +9,24 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Bobby Wu | Software Developer & AI Enthusiast",
-  description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
-  keywords: ["Bobby Wu", "Software Developer", "AI Enthusiast", "Portfolio", "Web Development"],
+  title: "Bobby Wu — Front-End & QA Automation Engineer",
+  description: "I build React/Next apps, automate testing at scale, and turn ideas into launchable products. Projects, experience, and writing.",
+  keywords: ["Bobby Wu", "Front-End Developer", "QA Automation", "React", "Next.js", "Portfolio", "Web Development", "Testing"],
   authors: [{ name: "Bobby Wu" }],
+  metadataBase: new URL("https://personal-website-five-peach-68.vercel.app"),
   openGraph: {
-    title: "Bobby Wu | Software Developer & AI Enthusiast",
-    description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
-    url: "https://yourwebsite.com",
+    title: "Bobby Wu — Front-End & QA Automation Engineer",
+    description: "Selected projects, measurable impact, and accessible UI.",
+    url: "https://personal-website-five-peach-68.vercel.app",
     siteName: "Bobby Wu's Portfolio",
     locale: "en_US",
     type: "website",
+    images: ["/og.png"]
   },
   twitter: {
     card: "summary_large_image",
-    title: "Bobby Wu | Software Developer & AI Enthusiast",
-    description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
-    creator: "@yourtwitter",
+    title: "Bobby Wu — Front-End & QA Automation Engineer",
+    description: "Selected projects, measurable impact, and accessible UI.",
   },
 };
 
@@ -48,6 +49,12 @@ export default function RootLayout({
   return (
     <html lang="en" className={inter.variable}>
       <body className={`font-sans antialiased bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100`}>
+        <a 
+          href="#main" 
+          className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 bg-blue-600 text-white px-4 py-2 rounded-lg z-50"
+        >
+          Skip to content
+        </a>
         {children}
       </body>
     </html>
