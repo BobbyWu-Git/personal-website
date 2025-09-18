@@ -5,8 +5,12 @@ const isGitHubPages = process.env.GITHUB_PAGES === 'true';
 
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  output: 'export',
-  distDir: 'out',
+  
+  // Only use static export for GitHub Pages
+  ...(isGitHubPages && {
+    output: 'export',
+    distDir: 'out',
+  }),
   
   // Fix workspace root warning
   outputFileTracingRoot: __dirname,
@@ -18,7 +22,8 @@ const nextConfig: NextConfig = {
   productionBrowserSourceMaps: false,
   
   images: { 
-    unoptimized: true,
+    // Only unoptimize images for static export (GitHub Pages)
+    unoptimized: isGitHubPages,
     domains: ['images.unsplash.com'] 
   },
   
@@ -26,9 +31,8 @@ const nextConfig: NextConfig = {
   ...(isGitHubPages && {
     basePath: '/personal-website',
     assetPrefix: '/personal-website/',
+    trailingSlash: true,
   }),
-  
-  trailingSlash: true,
   
   webpack: (config) => {
     return config;
