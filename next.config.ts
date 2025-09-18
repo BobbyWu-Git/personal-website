@@ -1,28 +1,21 @@
 import type { NextConfig } from 'next';
 
+const repo = 'personal-website';
+const isProd = process.env.NODE_ENV === 'production';
+
 const nextConfig: NextConfig = {
   reactStrictMode: true,
-  experimental: {
-    // Enable server actions
-    serverActions: {
-      bodySizeLimit: '2mb',
-    },
-  },
-  compiler: {
-    // Enable styled-components support
-    styledComponents: true,
-  },
-  // Enable source maps in development
+  output: 'export',
+
+  // no experimental.serverActions here
+
+  compiler: { styledComponents: true },
   productionBrowserSourceMaps: false,
-  // Configure images
-  images: {
-    domains: ['images.unsplash.com'], // Add any other domains you need
-  },
-  // Configure webpack
-  webpack: (config) => {
-    // Important: return the modified config
-    return config;
-  },
+  images: { unoptimized: true, domains: ['images.unsplash.com'] },
+  basePath: isProd ? `/${repo}` : '',
+  assetPrefix: isProd ? `/${repo}/` : '',
+  trailingSlash: true,
+  webpack: (config) => config,
 };
 
 export default nextConfig;
