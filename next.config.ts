@@ -8,6 +8,9 @@ const nextConfig: NextConfig = {
   output: 'export',
   distDir: 'out',
   
+  // Fix workspace root warning
+  outputFileTracingRoot: __dirname,
+  
   compiler: { 
     styledComponents: true 
   },

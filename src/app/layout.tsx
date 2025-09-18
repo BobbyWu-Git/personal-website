@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 
@@ -13,16 +13,6 @@ export const metadata: Metadata = {
   description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
   keywords: ["Bobby Wu", "Software Developer", "AI Enthusiast", "Portfolio", "Web Development"],
   authors: [{ name: "Bobby Wu" }],
-  themeColor: [
-    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
-    { media: "(prefers-color-scheme: dark)", color: "#111827" },
-  ],
-  viewport: {
-    width: "device-width",
-    initialScale: 1,
-    maximumScale: 5,
-    viewportFit: "cover",
-  },
   openGraph: {
     title: "Bobby Wu | Software Developer & AI Enthusiast",
     description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
@@ -37,6 +27,17 @@ export const metadata: Metadata = {
     description: "Personal portfolio of Bobby Wu, showcasing projects and experience in software development and AI.",
     creator: "@yourtwitter",
   },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+  viewportFit: "cover",
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#ffffff" },
+    { media: "(prefers-color-scheme: dark)", color: "#111827" },
+  ],
 };
 
 export default function RootLayout({
