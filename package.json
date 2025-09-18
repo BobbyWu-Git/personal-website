@@ -27,8 +27,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "export": "next export",
-    "predeploy": "npm run build && npm run export && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
+    "predeploy": "npm run build && node -e \"require('fs').writeFileSync('out/.nojekyll','')\"",
     "deploy": "gh-pages -d out -b gh-pages"
   }
 }
