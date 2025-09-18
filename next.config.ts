@@ -1,8 +1,5 @@
 import type { NextConfig } from 'next';
 
-const repo = 'personal-website';
-const isProd = process.env.NODE_ENV === 'production';
-
 const nextConfig: NextConfig = {
   reactStrictMode: true,
   output: 'export',
@@ -19,8 +16,8 @@ const nextConfig: NextConfig = {
     domains: ['images.unsplash.com'] 
   },
   
-  basePath: isProd ? `/${repo}` : '',
-  assetPrefix: isProd ? `/${repo}/` : '',
+  basePath: '/personal-website',
+  assetPrefix: '/personal-website/',
   trailingSlash: true,
   
   webpack: (config) => {
