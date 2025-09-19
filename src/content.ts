@@ -31,18 +31,18 @@ export const site = {
   resumePath: "/Bobby_Wu_Resume.pdf",  // put the file into /public
   socials: [
     { label: "GitHub", href: "https://github.com/BobbyWu-Git" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/bobbywu" } // TODO: replace
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/bobbywu042/" }
   ],
 };
 
 export const hero = {
-  headline: "Front-End & QA Automation Engineer — shipping AI-powered, accessible web apps",
-  subline: "I build React/Next apps, automate testing at scale, and turn ideas into launchable products.",
+  headline: "Cover Letters are Boring!",
+  subline: "So I built something you can actually click :)",
   metrics: [
-    { label: "Automated tests", value: "800+" },
-    { label: "Team pass rate", value: "96%" },
-    { label: "Member club ops", value: "3,000+" },
-    { label: "Content views", value: "18k+" }
+    { label: "Student devs mentored\nat Manulife/UW", value: "50+" },
+    { label: "Team success rate\nfor students", value: "96%" },
+    { label: "XML tests shipped\nat Ansys", value: "800+" },
+    { label: "Active club members\nat UWBC", value: "3,000+" }
   ] as Metric[],
   ctas: [
     { label: "View Projects", href: "#projects" },
@@ -75,7 +75,10 @@ export const projects: Project[] = [
     bullets: ["CRUD with filters", "Notifications", "Pantry analytics"],
     stack: ["React", "Supabase (optional)"],
     links: [{ label: "Notes", href: "#" }]
-  },
+  }
+];
+
+export const labProjects: Project[] = [
   {
     title: "MoonBoard Coach (WIP)",
     tagline: "Pose-aware beta hints and session analytics for climbers.",
@@ -87,10 +90,7 @@ export const projects: Project[] = [
     ],
     stack: ["React", "TF.js (planned)", "MediaPipe (planned)"],
     links: [{ label: "Notes", href: "#" }]
-  }
-];
-
-export const labProjects: Project[] = [
+  },
   {
     title: "Resume Critique Assistant (WIP)",
     tagline: "Fast resume feedback with actionable bullet rewrites and ATS checks.",
@@ -208,6 +208,6 @@ export const contact = {
   note: "I read everything—reply within 48h.",
   links: [
     { label: "GitHub", href: "https://github.com/BobbyWu-Git" },
-    { label: "LinkedIn", href: "https://www.linkedin.com/in/bobbywu" } // TODO
+    { label: "LinkedIn", href: "https://www.linkedin.com/in/bobbywu042" } // TODO
   ]
 };

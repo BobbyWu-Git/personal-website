@@ -9,9 +9,9 @@ export default function Hero() {
   return (
     <Section id="hero" compact className="min-h-screen flex items-center justify-center">
       <div className="max-w-4xl mx-auto text-center">
-        <div className="space-y-8 animate-fade-in">
+        <div className="animate-fade-in">
           {/* Main Headline */}
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-tight">
+          <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-6 bg-gradient-to-r from-blue-600 via-purple-500 to-pink-500 bg-clip-text text-transparent leading-relaxed py-4">
             {hero.headline}
           </h1>
 
