@@ -27,7 +27,7 @@ export const site = {
   name: "Bobby Wu",
   role: "Front-End & QA Automation Engineer",
   location: "Toronto, Canada",
-  email: "bobbywu@example.com",        // TODO: replace with real
+  email: "Bobbywu042@gmail.com",
   resumePath: "/Bobby_Wu_Resume.pdf",  // put the file into /public
   socials: [
     { label: "GitHub", href: "https://github.com/BobbyWu-Git" },
@@ -46,8 +46,8 @@ export const hero = {
   ] as Metric[],
   ctas: [
     { label: "View Projects", href: "#projects" },
-    { label: "Download Resume", href: "/Bobby_Wu_Resume.pdf", external: true },
-    { label: "Email Me", href: "mailto:bobbywu@example.com", external: true } // TODO
+    { label: "Download Résumé (PDF)", href: "/Bobby_Wu_Resume.pdf", external: true },
+    { label: "Email Me", href: "mailto:Bobbywu042@gmail.com", external: true }
   ] as LinkBtn[],
   logos: ["University of Waterloo", "Ansys", "Manulife"]
 };
@@ -201,7 +201,7 @@ export const about = {
 };
 
 export const contact = {
-  email: "bobbywu@example.com", // TODO: real email
+  email: "Bobbywu042@gmail.com",
   note: "I read everything—reply within 48h.",
   links: [
     { label: "GitHub", href: "https://github.com/BobbyWu-Git" },

@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import ThemeToggle from './ThemeToggle';
+import ResumeDownload from './ResumeDownload';
 
 const navItems = [
   { name: 'About', href: '#about' },
@@ -33,14 +34,12 @@ export default function Navbar() {
                 {item.name}
               </Link>
             ))}
-            <a
-              href="/Bobby_Wu_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <ResumeDownload
+              showFileSize={true}
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200 text-sm"
             >
-              Resume
-            </a>
+              Résumé
+            </ResumeDownload>
             <ThemeToggle />
           </div>
           

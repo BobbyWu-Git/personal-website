@@ -1,6 +1,8 @@
 'use client';
 
 import { motion } from 'framer-motion';
+import { site } from '@/content';
+import ResumeDownload from './ResumeDownload';
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -19,14 +21,14 @@ export default function Footer() {
             Bobby Wu
           </h3>
           <p className="text-gray-400 mb-6">
-            Software Developer & AI Enthusiast
+            {site.role}
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a 
-              href="#home" 
+              href="#about" 
               className="text-gray-400 hover:text-white transition-colors duration-200"
             >
-              Home
+              About
             </a>
             <a 
               href="#projects" 
@@ -35,15 +37,18 @@ export default function Footer() {
               Projects
             </a>
             <a 
-              href="#links" 
+              href="#contact" 
               className="text-gray-400 hover:text-white transition-colors duration-200"
             >
-              Links
+              Contact
             </a>
+            <ResumeDownload className="text-gray-400 hover:text-white transition-colors duration-200">
+              Download Résumé (PDF)
+            </ResumeDownload>
           </div>
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-500 text-sm">
-              © {currentYear} Bobby Wu. All rights reserved.
+              © {currentYear} Bobby Wu. Built with Next.js 15 + Tailwind CSS.
             </p>
           </div>
         </motion.div>
