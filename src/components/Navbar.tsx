@@ -9,7 +9,6 @@ const navItems = [
   { name: 'Projects', href: '#projects' },
   { name: 'Experience', href: '#experience' },
   { name: 'Leadership', href: '#leadership' },
-  { name: 'Writing', href: '#writing' },
   { name: 'Contact', href: '#contact' },
 ];
 
@@ -35,7 +34,7 @@ export default function Navbar() {
               </Link>
             ))}
             <ResumeDownload
-              showFileSize={true}
+              showFileSize={false}
               className="px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg font-medium transition-colors duration-200 text-sm"
             >
               Résumé

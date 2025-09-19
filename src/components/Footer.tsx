@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { site } from '@/content';
+// import { site } from '@/content';
 import ResumeDownload from './ResumeDownload';
 
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
             Bobby Wu
           </h3>
           <p className="text-gray-400 mb-6">
-            {site.role}
+            Front-End & QA Automation Engineer
           </p>
           <div className="flex justify-center space-x-6 mb-8">
             <a 
@@ -48,7 +48,7 @@ export default function Footer() {
           </div>
           <div className="border-t border-gray-800 pt-8">
             <p className="text-gray-500 text-sm">
-              © {currentYear} Bobby Wu. Built with Next.js 15 + Tailwind CSS.
+              © {currentYear} Bobby Wu. Built with WindsurfNext.js 15 + Tailwind CSS.
             </p>
           </div>
         </motion.div>

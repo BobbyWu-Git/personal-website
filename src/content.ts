@@ -69,6 +69,14 @@ export const projects: Project[] = [
     ]
   },
   {
+    title: "Food Storage Expiry Tracker",
+    tagline: "Reduce waste and eat better via pantry tracking + recipe suggestions.",
+    outcome: "Tracks expiry and suggests recipes by goal (protein/fiber).",
+    bullets: ["CRUD with filters", "Notifications", "Pantry analytics"],
+    stack: ["React", "Supabase (optional)"],
+    links: [{ label: "Notes", href: "#" }]
+  },
+  {
     title: "MoonBoard Coach (WIP)",
     tagline: "Pose-aware beta hints and session analytics for climbers.",
     outcome: "Highlights pathing and suggests improvements to increase send success.",
@@ -79,7 +87,10 @@ export const projects: Project[] = [
     ],
     stack: ["React", "TF.js (planned)", "MediaPipe (planned)"],
     links: [{ label: "Notes", href: "#" }]
-  },
+  }
+];
+
+export const labProjects: Project[] = [
   {
     title: "Resume Critique Assistant (WIP)",
     tagline: "Fast resume feedback with actionable bullet rewrites and ATS checks.",
@@ -91,14 +102,6 @@ export const projects: Project[] = [
     ],
     stack: ["Next.js", "Serverless (future)"],
     links: [{ label: "Notes", href: "#" }]
-  },
-  {
-    title: "Food Storage Expiry Tracker",
-    tagline: "Reduce waste and eat better via pantry tracking + recipe suggestions.",
-    outcome: "Tracks expiry and suggests recipes by goal (protein/fiber).",
-    bullets: ["CRUD with filters", "Notifications", "Pantry analytics"],
-    stack: ["React", "Supabase (optional)"],
-    links: [{ label: "Notes", href: "#" }]
   }
 ];
 
@@ -106,7 +109,7 @@ export const experience: Role[] = [
   {
     org: "Ansys",
     title: "Software QA Automation Engineer",
-    period: "2023–2024",
+    period: "May 2023 – Apr 2024",
     bullets: [
       "Maintained and optimized 800+ regression tests across critical flows",
       "Prototyped GPT-assisted test generation & verification for faster coverage",
@@ -117,7 +120,7 @@ export const experience: Role[] = [
   {
     org: "University of Waterloo",
     title: "Digital Learning Content Developer",
-    period: "2022–2023",
+    period: "Sep 2022 – Apr 2023",
     bullets: [
       "Built accessible econ/math learning modules for LEARN/Möbius",
       "Coordinated QA and releases with clear documentation",
@@ -128,7 +131,7 @@ export const experience: Role[] = [
   {
     org: "Manulife (UW)",
     title: "Web Dev Team Lead",
-    period: "2021–2022",
+    period: "Sep 2021 – Apr 2022",
     bullets: [
       "Led 50+ co-ops; achieved a 96% project pass rate via code reviews & workshops",
       "Standardized project templates and onboarding for faster ramp-up",
@@ -142,7 +145,7 @@ export const leadership: Role[] = [
   {
     org: "UW Badminton Club",
     title: "President of Operations",
-    period: "2023–2025",
+    period: "Sep 2023 – Present",
     bullets: [
       "Directed ops for 3,000+ members; budget up to $18k",
       "Capacity planning, scheduling, and sponsor partnerships",
@@ -153,7 +156,7 @@ export const leadership: Role[] = [
   {
     org: "UW Climbing Club",
     title: "Ambassador",
-    period: "2024–2025",
+    period: "Jan 2024 – Present",
     bullets: [
       "Organized workshops and socials for an inclusive community",
       "Supported onboarding and gear education for new climbers"
