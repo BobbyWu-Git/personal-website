@@ -18,10 +18,10 @@ export default function Home() {
       <main id="main">
         <Hero />
         <Projects />
+        <About />
         <Experience />
         <Leadership />
         <Skills />
-        <About />
         <Contact />
       </main>
       <Footer />

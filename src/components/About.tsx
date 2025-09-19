@@ -1,30 +1,28 @@
 'use client';
 
-import { about } from '@/content';
+import { motion } from 'framer-motion';
 import Section from './Section';
+import AboutChat from './AboutChat';
 
 export default function About() {
   return (
-    <Section 
-      id="about" 
-      heading="About / Now" 
-      subheading="What I'm currently working on and what drives me."
-    >
-      <div className="max-w-3xl mx-auto">
-        <div className="bg-white dark:bg-gray-800 rounded-xl p-8 shadow-lg border border-gray-200 dark:border-gray-700">
-          <div className="space-y-4">
-            {about.now.map((paragraph, index) => (
-              <p
-                key={index}
-                className="text-gray-700 dark:text-gray-300 leading-relaxed animate-fade-in"
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
-                {paragraph}
-              </p>
-            ))}
-          </div>
-        </div>
-      </div>
+    <Section id="about">
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6 }}
+        className="text-center mb-16"
+      >
+        <h2 className="text-3xl md:text-4xl font-bold mb-6 bg-gradient-to-r from-blue-600 to-pink-500 bg-clip-text text-transparent">
+          About Me
+        </h2>
+        <p className="text-xl text-gray-600 dark:text-gray-400 max-w-3xl mx-auto">
+          Cover letters are ALSO boring—here&apos;s the interactive version
+        </p>
+      </motion.div>
+
+      <AboutChat />
     </Section>
   );
 }

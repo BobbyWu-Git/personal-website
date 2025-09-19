@@ -36,7 +36,7 @@ export const site = {
 };
 
 export const hero = {
-  headline: "Cover Letters are Boring!",
+  headline: "Résumés are Boring!",
   subline: "So I built something you can actually click :)",
   metrics: [
     { label: "Student devs mentored\nat Manulife/UW", value: "50+" },
