@@ -27,17 +27,25 @@ export default function Projects() {
         ))}
       </div>
 
-      {/* Lab Section */}
+      {/* Work In Progress Section */}
       <div className="mt-12 pt-8 border-t border-gray-200 dark:border-gray-700">
-        <button
-          onClick={() => setShowLab(!showLab)}
-          className="flex items-center gap-2 text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-100 transition-colors mb-6"
-        >
-          <span className="text-sm font-medium">Lab (Experimental Projects)</span>
-          <span className={`transform transition-transform ${showLab ? 'rotate-180' : ''}`}>
-            ▼
-          </span>
-        </button>
+        <div className="flex justify-center">
+          <button
+            onClick={() => setShowLab(!showLab)}
+            className="group relative flex items-center gap-3 px-6 py-3 rounded-full border-2 border-dashed border-gray-300 dark:border-gray-600 text-gray-600 dark:text-gray-400 hover:border-purple-400 hover:text-purple-600 dark:hover:text-purple-400 transition-all duration-300 hover:scale-105 hover:shadow-lg mb-6"
+          >
+            <span className="text-sm font-medium">🚧 Work In Progress (Coming Soon!) 🚧</span>
+            <span className={`transform transition-all duration-300 group-hover:scale-110 ${showLab ? 'rotate-180' : ''}`}>
+              ▼
+            </span>
+            
+            {/* Subtle glow effect */}
+            <div className="absolute inset-0 rounded-full bg-purple-400/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300 -z-10"></div>
+            
+            {/* Pulse ring */}
+            <div className="absolute inset-0 rounded-full border-2 border-purple-400/30 animate-ping opacity-0 group-hover:opacity-100"></div>
+          </button>
+        </div>
         
         {showLab && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 animate-fade-in">

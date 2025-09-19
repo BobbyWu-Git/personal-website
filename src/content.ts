@@ -64,21 +64,50 @@ export const projects: Project[] = [
     ],
     stack: ["React", "Vite", "Web APIs"],
     links: [
-      { label: "Demo", href: "https://github.com/BobbyWu-Git/Caption-translator" },
       { label: "Code", href: "https://github.com/BobbyWu-Git/Caption-translator" }
     ]
   },
   {
-    title: "Food Storage Expiry Tracker",
-    tagline: "Reduce waste and eat better via pantry tracking + recipe suggestions.",
-    outcome: "Tracks expiry and suggests recipes by goal (protein/fiber).",
-    bullets: ["CRUD with filters", "Notifications", "Pantry analytics"],
-    stack: ["React", "Supabase (optional)"],
-    links: [{ label: "Notes", href: "#" }]
+    title: "Interactive Portfolio Website (THIS SITE!)",
+    tagline: "Modern portfolio with chat interface, animations, and responsive design.",
+    outcome: "Engaging user experience that showcases projects and personality interactively.",
+    bullets: [
+      "Interactive chat-based about section",
+      "Smooth animations with Framer Motion",
+      "Dark mode support and mobile-first design"
+    ],
+    stack: ["Next.js 15", "React", "Tailwind CSS", "Framer Motion"],
+    links: [
+      { label: "Code", href: "https://github.com/BobbyWu-Git/personal-website" }
+    ]
   }
 ];
 
 export const labProjects: Project[] = [
+  {
+    title: "Food Storage Expiry Tracker (WIP)",
+    tagline: "Reduce waste and eat better via pantry tracking + recipe suggestions.",
+    outcome: "Tracks expiry and suggests recipes by goal (protein/fiber).",
+    bullets: [
+      "CRUD operations with smart filters",
+      "Push notifications for expiring items",
+      "Pantry analytics and waste reduction insights"
+    ],
+    stack: ["React", "Supabase", "PWA"],
+    links: [{ label: "Notes", href: "#" }]
+  },
+  {
+    title: "WaterlooWorks Auto Apply Extension (WIP)",
+    tagline: "Browser extension to streamline job applications on WaterlooWorks.",
+    outcome: "Automates repetitive application tasks and tracks application status.",
+    bullets: [
+      "One-click application submission",
+      "Application status tracking dashboard",
+      "Smart filtering and job matching"
+    ],
+    stack: ["JavaScript", "Chrome Extension API", "Local Storage"],
+    links: [{ label: "Notes", href: "#" }]
+  },
   {
     title: "MoonBoard Coach (WIP)",
     tagline: "Pose-aware beta hints and session analytics for climbers.",

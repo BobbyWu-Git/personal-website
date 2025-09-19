@@ -11,6 +11,7 @@ const topics = [
   { key: 'tft', label: 'TFT', emoji: '🎲' },
   { key: 'work', label: 'Work', emoji: '💻' },
   { key: 'school', label: 'School', emoji: '🎓' },
+  { key: 'church', label: 'Church', emoji: '⛪' },
   { key: 'random', label: 'Random', emoji: '✨' }
 ] as const;
 

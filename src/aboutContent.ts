@@ -1,6 +1,6 @@
 export type QA = { 
   id: string; 
-  topic: "badminton" | "climbing" | "tft" | "school" | "work" | "random"; 
+  topic: "badminton" | "climbing" | "tft" | "school" | "work" | "church" | "random"; 
   q: string; 
   a: { fun: string; serious: string } 
 };
@@ -139,6 +139,42 @@ export const aboutQA: QA[] = [
     a: {
       fun: "World domination through better UX and fewer broken tests. Also maybe learning to consistently hit cross-court drops.",
       serious: "Continuing to build accessible, AI-powered tools while growing as a technical leader and mentor."
+    }
+  },
+  {
+    id: "church-involvement",
+    topic: "church",
+    q: "Tell me about your church involvement?",
+    a: {
+      fun: "I volunteer at Westpark Church and drag my friends to Sunday service (they secretly love it, I think 😄).",
+      serious: "I actively volunteer at Westpark Church and regularly invite friends to join me for Sunday services. My faith is an important part of my life."
+    }
+  },
+  {
+    id: "faith-impact",
+    topic: "church",
+    q: "How does your faith influence your work?",
+    a: {
+      fun: "Jesus taught me to love people well, so I try to build things that actually help folks instead of just looking cool.",
+      serious: "My relationship with Jesus Christ shapes how I approach service, mentorship, and building technology that genuinely benefits others."
+    }
+  },
+  {
+    id: "westpark-volunteering",
+    topic: "church",
+    q: "What do you do at Westpark Church?",
+    a: {
+      fun: "Whatever needs doing! From setup to greeting people—church is like a startup but with better coffee and eternal impact.",
+      serious: "I volunteer in various capacities at Westpark Church, helping with operations and community building. It's rewarding to serve alongside others."
+    }
+  },
+  {
+    id: "bringing-friends",
+    topic: "church",
+    q: "Do your friends actually enjoy church?",
+    a: {
+      fun: "Most of them keep coming back, so either they genuinely like it or I'm really persuasive about brunch afterwards 🤔",
+      serious: "I love sharing my faith community with friends. Many have found the welcoming atmosphere and meaningful messages valuable, regardless of their background."
     }
   }
 ];
